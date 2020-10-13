@@ -1,4 +1,4 @@
-const formatBytes = require("./formatBytes");
+import formatBytes from "./formatBytes";
 
 describe('formatBytes', () => {
   it('formats in MBs', () => {

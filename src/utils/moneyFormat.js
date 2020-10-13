@@ -1,6 +1,6 @@
 const { format } = require("prettier");
 
-function moneyFormat(value) {
+export default function moneyFormat(value) {
     if(value === Math.round(value)) {
         return formatWithDollar(value) + '.00';
     }
@@ -10,5 +10,3 @@ function moneyFormat(value) {
 function formatWithDollar(value) {
     return '$' + value.toLocaleString('en-US');
 }
-
-module.exports = moneyFormat;

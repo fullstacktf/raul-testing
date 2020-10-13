@@ -1,4 +1,4 @@
-function formatBytes(megabytes) {
+export default function formatBytes(megabytes) {
   const units = ["MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
 
   let actualValue = megabytes;
@@ -18,5 +18,3 @@ function formatBytes(megabytes) {
 
   return result.trim();
 }
-
-module.exports = formatBytes;
